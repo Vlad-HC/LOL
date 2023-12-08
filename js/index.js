@@ -14,6 +14,21 @@ let obj = [
 			},
 		],
 	},
+	{
+		name: "round-two",
+		matchups: [
+			{
+				teams: ["ZSB-E", "ZSO"],
+				score: [1, 0],
+				date: "12-12-2019 12:00",
+			},
+			{
+				teams: ["Kek", "Hej"],
+				score: [0, 1],
+				date: "12-12-2019 12:00",
+			},
+		],
+	},
 ];
 
 addEventListener("load", (ev) => {
