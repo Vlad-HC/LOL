@@ -343,12 +343,12 @@ body {
 }
 
 .round {
-	justify-content: space-around;
+	/* justify-content: space-around; */
 }
 
 .matchup-container {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
