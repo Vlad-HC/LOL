@@ -154,7 +154,8 @@ body {
 .round-three .matchup {
   margin: 0;
   height: 60px;
-  padding: 130px 0;
+  padding-top: 115px;
+
 }
 .round-details {
   font-family: "Roboto Condensed", sans-serif;
