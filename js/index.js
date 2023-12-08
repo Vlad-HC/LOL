@@ -39,7 +39,7 @@ addEventListener("load", (ev) => {
 			const elem = rounds[i];
 			const matchup = round.matchups[i];
 			for (let j = 0; j < matchup.teams.length; j++) {
-				elem.innerHTML += `<li class="team">${matchup.teams[j]}<span class="score">${matchup.score[j]}</span></li>`;
+				elem.innerHTML += `<li class="team current-team">${matchup.teams[j]}<span class="score">${matchup.score[j]}</span></li>`;
 			}
 		}
 	}

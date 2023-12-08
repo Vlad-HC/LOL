@@ -7,12 +7,6 @@ body {
 	margin: 0;
 }
 
-.team {
-	background-color: #fff;
-	box-shadow: none;
-	opacity: 0.45;
-}
-
 .hero {
 	position: relative;
 	text-align: center;
@@ -171,11 +165,17 @@ body {
 	text-align: center;
 	height: 40px;
 }
-.champion li,
-.round li {
+// .champion li,
+// .round li {
+// 	background-color: #fff;
+// 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+// 	opacity: 1;
+// }
+
+.team {
 	background-color: #fff;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-	opacity: 1;
+	box-shadow: none;
+	opacity: 0.45;
 }
 .current li {
 	opacity: 1;
