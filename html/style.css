@@ -149,12 +149,12 @@ body {
 .round-two .matchup {
 	margin: 0;
 	height: 60px;
-	padding: 50px 0;
+	padding: 10px 0;
 }
 .round-three .matchup {
 	margin: 0;
 	height: 60px;
-	padding: 130px 0;
+	padding: 10px 0;
 }
 .round-details {
 	font-family: "Roboto Condensed", sans-serif;
@@ -348,5 +348,7 @@ body {
 
 .matchup-container {
 	display: flex;
+	flex-direction: column;
 	height: 100%;
+	justify-content: space-around;
 }
