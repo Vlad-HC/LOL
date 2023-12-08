@@ -308,6 +308,11 @@ body {
 	}
 }
 
+@media screen and (max-width: 475px) {
+.hero p.year i {
+  display: none;
+}
+}
 @media screen and (max-width: 400px) {
 	.split {
 		width: 95%;
