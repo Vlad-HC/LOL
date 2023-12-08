@@ -85,16 +85,18 @@ body {
 	flex-direction: row;
 }
 .champion {
-	float: left;
 	display: block;
-	width: 16%;
 	-webkit-flex-direction: row;
-	flex-direction: row;
+	flex-direction: column;
 	-webkit-align-self: center;
 	align-self: center;
 	margin-top: -15px;
 	text-align: center;
 	padding: 230px 0\9;
+	margin-top: 8px;
+}
+.center-box {
+	width: 16%;
 }
 .champion i {
 	color: #a0a6a8;
@@ -146,6 +148,14 @@ body {
 	white-space: nowrap;
 	overflow: hidden;
 	position: relative;
+}
+.team-winners {
+	height: 50px;
+	width: 100%;
+	background-color: #fff;
+	opacity: 0.45;
+	display: flex;
+	margin-top: 80px;
 }
 .round-two .matchup {
 	margin: 0;
@@ -205,6 +215,7 @@ body {
 }
 .final {
 	margin: 4.5em 0;
+	margin: 0 0 50px 0;
 }
 
 @-webkit-keyframes pulse {
@@ -264,7 +275,7 @@ body {
 	.container {
 		margin: 0 1%;
 	}
-	.champion {
+	.center-box {
 		width: 14%;
 	}
 	.split {
@@ -288,11 +299,11 @@ body {
 		flex-direction: column;
 	}
 	.split,
-	.champion {
+	.center-box {
 		width: 90%;
 		margin: 35px 5%;
 	}
-	.champion {
+	.center-box {
 		-webkit-box-ordinal-group: 3;
 		-moz-box-ordinal-group: 3;
 		-ms-flex-order: 3;
@@ -363,6 +374,30 @@ body {
 	flex-direction: column;
 	height: 100%;
 	justify-content: space-evenly;
+}
+
+.matchup-container-round-two {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	gap: 80px;
+}
+
+.matchup-container-round-three {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	gap: 80px;
+}
+// semis-l i semis-r są wyłączone
+.semis-l {
+	display: none;
+}
+
+.semis-r {
+	display: none;
 }
 
 .current-team {
