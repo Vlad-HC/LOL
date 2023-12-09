@@ -1,9 +1,32 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
 body {
 	font-family: "Istok Web", sans-serif;
-	background: url("../assets/TłoX4.png") no-repeat #000;
-	background-size: cover;
 	min-height: 100%;
 	margin: 0;
+}
+.bg-image {
+	position: fixed;
+	top: -5px;
+	left: -5px;
+	z-index: -1;
+
+	background: url("../assets/TłoX4.png") no-repeat #000;
+	background-size: cover;
+	filter: blur(2px);
+
+	width: calc(100% + 5px * 2);
+	height: calc(100% + 5px * 2);
+}
+.header-wrap {
+	margin: 1em 0px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .hero {
@@ -25,18 +48,18 @@ body {
 		flex-direction: row;
 	}
 }
-.hero h1 {
+.hero .headline {
 	color: white;
 
 	font-family: "Holtwood One SC", serif;
 	font-weight: normal;
 	font-size: 5.4em;
-	margin: 0 0 20px;
+	// margin: 0 0 20px;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 	text-transform: uppercase;
 	letter-spacing: -1px;
 }
-.hero p {
+.hero .intro {
 	font-family: "Abel", sans-serif;
 	text-transform: uppercase;
 	color: #00a6ff;
@@ -50,14 +73,12 @@ body {
 	padding: 0px 10px 3.5em 10px;
 }
 .hero {
-	p {
-		&.intro {
-			font-family: "Holtwood One SC", serif;
-			text-transform: uppercase;
-			letter-spacing: 1px;
-			font-size: 3em;
-			margin-bottom: -30px;
-		}
+	.intro {
+		font-family: "Holtwood One SC", serif;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 3em;
+		margin-bottom: -30px;
 	}
 }
 .year {
@@ -351,10 +372,10 @@ $share-pulse-scale: 1.15;
 	.split-one .vote-box {
 		margin-left: 138px;
 	}
-	.hero p.intro {
+	.hero .intro {
 		font-size: 28px;
 	}
-	.hero p.year {
+	.hero .year {
 		margin: 5px 0 10px;
 	}
 }
@@ -384,15 +405,17 @@ $share-pulse-scale: 1.15;
 		border-bottom: 1px solid #b6b6b6;
 		padding-bottom: 20px;
 	}
-	.hero p.intro {
-		font-size: 24px;
-	}
-	.hero h1 {
-		font-size: 2.5em;
-		margin: 15px 0;
-	}
-	.hero p {
-		font-size: 1em;
+	.hero {
+		.headline {
+			font-size: 2.5em;
+			margin: 15px 0;
+		}
+		.intro {
+			font-size: 24px;
+			p {
+				font-size: 1em;
+			}
+		}
 	}
 }
 
@@ -428,7 +451,7 @@ $share-pulse-scale: 1.15;
 		letter-spacing: 0;
 		margin: 0;
 	}
-	.hero p.intro {
+	.hero .intro {
 		font-size: 1.15em;
 		margin-bottom: -10px;
 	}
