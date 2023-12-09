@@ -1,6 +1,6 @@
 body {
 	font-family: "Istok Web", sans-serif;
-	background: url("../assets/Tło.webp") no-repeat #000;
+	background: url("../assets/TłoX4.png") no-repeat #000;
 	background-size: cover;
 	min-height: 100%;
 	margin: 0;
@@ -11,6 +11,7 @@ body {
 	text-align: center;
 	overflow: hidden;
 	color: #fcfcfc;
+	user-select: none;
 }
 .hero h1 {
 	font-family: "Holtwood One SC", serif;
@@ -38,6 +39,9 @@ body {
 	letter-spacing: 1px;
 	font-size: 3em;
 	margin-bottom: -30px;
+}
+.intro-color {
+	color: #00a6ff;
 }
 .hero p.year {
 	color: #fff;
@@ -72,6 +76,7 @@ body {
 	display: flex;
 	-webkit-flex-direction: row;
 	flex-direction: row;
+	user-select: none;
 }
 .split {
 	display: block;
@@ -201,6 +206,19 @@ body {
 	display: block;
 	height: 52px;
 }
+.share-section {
+	display: table;
+	width: 100%;
+	overflow: hidden;
+	background-color: #000;
+	background-color: rgba(0, 0, 0, 1);
+	border-style: solid none none none;
+	border-width: 3px;
+	border-color: rgba(0, 0, 0, 1);
+}
+.share {
+	user-select: none;
+}
 .share .container {
 	margin: 0 auto;
 	text-align: center;
@@ -270,10 +288,13 @@ body {
 	font-size: 10px;
 	letter-spacing: 2px;
 	font-family: "Istok Web", sans-serif;
-	color: #3f915f;
+	color: white;
 }
 
 @media screen and (min-width: 981px) and (max-width: 1099px) {
+	body {
+		background-position: center;
+	}
 	.container {
 		margin: 0 1%;
 	}
@@ -295,6 +316,9 @@ body {
 }
 
 @media screen and (max-width: 980px) {
+	body {
+		background-position: center;
+	}
 	.container {
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
@@ -332,8 +356,14 @@ body {
 	.hero p.year i {
 		display: none;
 	}
+	body {
+		background-position: center;
+	}
 }
 @media screen and (max-width: 400px) {
+	body {
+		background-position: center;
+	}
 	.split {
 		width: 95%;
 		margin: 25px 2.5%;
