@@ -33,25 +33,29 @@ body {
 .hero-wrap {
 	padding: 3.5em 10px;
 }
-.hero p.intro {
-	font-family: "Holtwood One SC", serif;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-size: 3em;
-	margin-bottom: -30px;
+.hero {
+	p {
+		&.intro {
+			font-family: "Holtwood One SC", serif;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-size: 3em;
+			margin-bottom: -30px;
+		}
+		&.year {
+			color: #fff;
+			letter-spacing: 20px;
+			font-size: 34px;
+			margin: -15px 0 10px;
+			i {
+				font-size: 14px;
+				vertical-align: middle;
+			}
+		}
+	}
 }
 .intro-color {
 	color: #00a6ff;
-}
-.hero p.year {
-	color: #fff;
-	letter-spacing: 20px;
-	font-size: 34px;
-	margin: -15px 0 10px;
-}
-.hero p.year i {
-	font-size: 14px;
-	vertical-align: middle;
 }
 #bracket {
 	overflow: hidden;
@@ -120,6 +124,8 @@ body {
 	display: flex;
 	-webkit-flex-direction: column;
 	flex-direction: column;
+
+	align-items: center;
 	width: 95%;
 	width: 30.8333%\9;
 }
@@ -164,15 +170,14 @@ body {
 	display: flex;
 	margin-top: 80px;
 }
-.round-two .matchup {
-	margin: 0;
-	height: 60px;
-	padding: 10px 0;
-}
-.round-three .matchup {
-	margin: 0;
-	height: 60px;
-	padding: 10px 0;
+.round-three,
+.round-two,
+.round-four {
+	.matchup {
+		margin: 0;
+		height: 60px;
+		padding: 10px 0;
+	}
 }
 .round-details {
 	font-family: "Roboto Condensed", sans-serif;
@@ -218,10 +223,10 @@ body {
 }
 .share {
 	user-select: none;
-}
-.share .container {
-	margin: 0 auto;
-	text-align: center;
+	.container {
+		margin: 0 auto;
+		text-align: center;
+	}
 }
 .share-icon {
 	font-size: 24px;
@@ -234,7 +239,10 @@ body {
 	margin: 25px auto;
 }
 .final {
-	margin: 4.5em 0;
+	// margin: 4.5em 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	margin: 0 0 50px 0;
 }
 
@@ -278,11 +286,11 @@ body {
 .share-icon {
 	color: #fff;
 	opacity: 0.35;
-}
-.share-icon:hover {
-	opacity: 1;
-	-webkit-animation: pulse 0.5s;
-	animation: pulse 0.5s;
+	&:hover {
+		opacity: 1;
+		-webkit-animation: pulse 0.5s;
+		animation: pulse 0.5s;
+	}
 }
 .date {
 	font-size: 10px;
@@ -402,25 +410,22 @@ body {
 // }
 
 .matchup-container {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	height: 100%;
 	justify-content: space-evenly;
 }
 
-.matchup-container-round-two {
+.matchup-container-round-two,
+.matchup-container-round-three,
+.matchup-container-round-four {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	height: 100%;
-	gap: 80px;
-}
-
-.matchup-container-round-three {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	height: 100%;
+	width: 100%;
 	gap: 80px;
 }
 // semis-l i semis-r są wyłączone
