@@ -90,7 +90,7 @@ body {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	width: 42%;
+	width: calc(42% - (42%/4));
 	-webkit-flex-direction: row;
 	-moz-flex-direction: row;
 	flex-direction: row;
@@ -168,7 +168,13 @@ body {
 	background-color: #fff;
 	opacity: 0.45;
 	display: flex;
-	margin-top: 80px;
+}
+#winners-box {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
 }
 .round-three,
 .round-two,
@@ -179,6 +185,27 @@ body {
 		padding: 10px 0;
 	}
 }
+#cross-symbol {
+	display: none;
+	color: #a0a6a8;
+	font-size: 80px;
+}
+#ribbon-id {
+	display: flex;
+	margin-bottom: -10px;
+}
+.round-four.left {
+	display: flex;
+	width: calc(42%/4);
+	margin-right: 10px;
+}
+
+.round-four.right {
+	display: flex;
+	width: calc(42%/4);
+	margin-left: 10px;
+}
+
 .round-details {
 	font-family: "Roboto Condensed", sans-serif;
 	font-size: 13px;
@@ -310,7 +337,7 @@ body {
 		width: 14%;
 	}
 	.split {
-		width: 43%;
+		width: calc(43% - (43%/4));
 	}
 	.split-one .vote-box {
 		margin-left: 138px;
@@ -324,6 +351,31 @@ body {
 }
 
 @media screen and (max-width: 980px) {
+	.round.round-four {
+		width: 90%;
+		align-self: center;
+	}
+	.round.round-four.left,
+	.round.round-four.right {
+		margin: 0;
+	}
+	.round.round-four {
+		-webkit-box-ordinal-group: 3;
+		-moz-box-ordinal-group: 3;
+		-ms-flex-order: 3;
+		-webkit-order: 3;
+		order: 3;
+	}
+	.round.round-four.right {
+		border-bottom: 1px solid #b6b6b6;
+		padding-bottom: 20px;
+	}
+	#round-details-right {
+		display: none;
+	}
+	#cross-symbol {
+		display: flex;
+	}
 	body {
 		background-position: center;
 	}
@@ -338,11 +390,11 @@ body {
 		margin: 35px 5%;
 	}
 	.center-box {
-		-webkit-box-ordinal-group: 3;
-		-moz-box-ordinal-group: 3;
-		-ms-flex-order: 3;
-		-webkit-order: 3;
-		order: 3;
+		-webkit-box-ordinal-group: 4;
+		-moz-box-ordinal-group: 4;
+		-ms-flex-order: 4;
+		-webkit-order: 4;
+		order: 4;
 	}
 	.split {
 		border-bottom: 1px solid #b6b6b6;
@@ -361,6 +413,14 @@ body {
 }
 
 @media screen and (max-width: 475px) {
+	.round.round-four {
+		width: 90%;
+		align-self: center;
+	}
+	.round.round-four.left,
+	.round.round-four.right {
+		margin: 0;
+	}
 	.hero p.year i {
 		display: none;
 	}
@@ -373,6 +433,7 @@ body {
 		background-position: center;
 	}
 	.split {
+		display: flex;
 		width: 95%;
 		margin: 25px 2.5%;
 	}
@@ -427,6 +488,9 @@ body {
 	height: 100%;
 	width: 100%;
 	gap: 80px;
+}
+.matchup-container-round-four {
+	display: flex;
 }
 // semis-l i semis-r są wyłączone
 .semis-l {
