@@ -8,6 +8,26 @@ body {
 	min-height: 100%;
 	margin: 0;
 }
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+	position: absolute;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+	background: #2c7399;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #00a6ff;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #fff;
+}
 .bg-image {
 	position: fixed;
 	top: -5px;
