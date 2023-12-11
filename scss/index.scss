@@ -192,15 +192,23 @@ $share-pulse-scale: 1.15;
 	.split-one .vote-box {
 		margin-left: 138px;
 	}
-	.hero .intro {
-		font-size: 28px;
-	}
-	.hero .year {
-		margin: 5px 0 10px;
+	.hero {
+		.intro {
+			font-size: 28px;
+		}
+		.year {
+			margin: 5px 0 10px;
+		}
 	}
 }
 
 @media screen and (max-width: 980px) {
+	.year {
+		background-color: transparent;
+		box-shadow: 0 0 20px 10px black;
+		width: 80%;
+		font-size: 20px;
+	}
 	body {
 		background-position: center;
 	}
