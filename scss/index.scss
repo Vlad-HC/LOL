@@ -111,8 +111,11 @@ body {
 		margin: auto 20px;
 		scale: 1.5;
 	}
-	padding: 15px;
-	background-color: #121212;
+	padding: 1px;
+	margin-left: 1px;
+	margin-right: 1px;
+	border-radius: 12.5px;
+	background-color: #121212a1;
 }
 
 $share-pulse-scale: 1.15;
