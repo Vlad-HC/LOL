@@ -1,12 +1,13 @@
 #bracket {
-	overflow: hidden;
 	background-color: #000;
 	background-color: rgba(0, 0, 0, 0.9);
 	padding-top: 20px;
 	font-size: 12px;
 	padding: 40px 0;
+
 	display: flex;
 	justify-content: center;
+	flex-grow: 1;
 }
 .container {
 	max-width: 2000px;

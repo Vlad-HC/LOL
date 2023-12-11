@@ -3,10 +3,19 @@
 	padding: 0px;
 }
 
+body,
+html {
+	width: 100%;
+	height: 100%;
+}
+
 body {
 	font-family: "Istok Web", sans-serif;
-	min-height: 100%;
 	margin: 0;
+
+	display: flex;
+	flex-direction: column;
+	flex: 1;
 }
 
 @import "bracket.scss";
@@ -42,52 +51,38 @@ body {
 	align-items: center;
 
 	position: relative;
-	// text-align: center;
-	overflow: hidden;
 	color: #fcfcfc;
 	user-select: none;
-	* {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
 	.year {
 		flex-direction: row;
 	}
-}
-.hero .headline {
-	color: white;
+	.headline {
+		color: white;
 
-	font-family: "Holtwood One SC", serif;
-	font-weight: normal;
-	font-size: 5.4em;
-	// margin: 0 0 20px;
-	text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
-	text-transform: uppercase;
-	letter-spacing: -1px;
-}
-.hero .intro {
-	font-family: "Abel", sans-serif;
-	text-transform: uppercase;
-	color: #00a6ff;
-	letter-spacing: 6px;
-	// text-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
-	text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
-
-	font-size: 1.2em;
-}
-.hero-wrap {
-	padding: 0px 10px 3.5em 10px;
-}
-.hero {
+		font-family: "Holtwood One SC", serif;
+		font-weight: normal;
+		font-size: 5.4em;
+		text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+		text-transform: uppercase;
+		letter-spacing: -1px;
+	}
 	.intro {
+		color: #00a6ff;
+		// text-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+		text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+
 		font-family: "Holtwood One SC", serif;
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		font-size: 3em;
 		margin-bottom: -30px;
+		font-size: 1.2em;
 	}
 }
+.hero-wrap {
+	padding: 0px 10px 3.5em 10px;
+}
+
 .year {
 	display: flex;
 	color: #e50045;
@@ -240,6 +235,9 @@ $share-pulse-scale: 1.15;
 			p {
 				font-size: 1em;
 			}
+		}
+		.header-wrap {
+			margin-bottom: 0px;
 		}
 	}
 }
