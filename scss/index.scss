@@ -202,6 +202,20 @@ $share-pulse-scale: 1.15;
 	}
 }
 
+@media screen and (max-width: 370px) {
+	.hero {
+		.year {
+			font-size: 13px;
+			.fa-star {
+				font-size: 10px;
+			}
+		}
+	}
+
+	.headline {
+		text-align: center;
+	}
+}
 @media screen and (max-width: 980px) {
 	.year {
 		background-color: transparent;
