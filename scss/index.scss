@@ -219,7 +219,8 @@ $share-pulse-scale: 1.15;
 @media screen and (max-width: 980px) {
 	.year {
 		background-color: transparent;
-		box-shadow: 0 0 20px 10px black;
+		// box-shadow: 0 0 20px 10px black;
+		text-shadow: 2px 2px 1px black;
 		width: 80%;
 		font-size: 20px;
 	}

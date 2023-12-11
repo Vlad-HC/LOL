@@ -47,6 +47,16 @@
 	padding: 230px 0\9;
 	margin-top: 4px;
 }
+
+#champions {
+	transition: scale 0.5s, outline 0.6s, box-shadow 0.5s ease-in-out;
+	box-shadow: 0px 0px 0px 0px gold;
+	&:hover {
+		scale: 1.2;
+		box-shadow: 0px 0px 0px 7px gold;
+	}
+}
+
 .center-box {
 	width: 16%;
 }
@@ -266,6 +276,17 @@
 			box-shadow: 0px 0px 0px 3px #fc5185;
 		}
 	}
+}
+
+.team-winners.active {
+	background-color: #fff;
+	opacity: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-weight: bold;
+	font-size: large;
 }
 
 @media screen and (max-width: 980px) {
