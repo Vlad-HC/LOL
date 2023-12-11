@@ -147,8 +147,13 @@ let obj = [
 		],
 	},
 ];
+// Change null to a string with the team's name
+// like
+// let champion = "ZSB-E";
+let champion = null;
 
 addEventListener("load", (ev) => {
+	// Adding matchups
 	for (const round of obj) {
 		let rounds = document.querySelectorAll(`.${round.name} .matchup`);
 
@@ -164,5 +169,11 @@ addEventListener("load", (ev) => {
 				}
 			}
 		}
+	}
+
+	if (champion !== null) {
+		let champs = document.getElementById("champions");
+		champs.classList.add("active");
+		champs.textContent = champion;
 	}
 });
