@@ -198,41 +198,12 @@
 .current li {
 	opacity: 1;
 }
-// .current li.team {
-// 	background-color: #fff;
-// 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-// 	opacity: 1;
-// }
+
 .vote-options {
 	display: block;
 	height: 52px;
 }
-.share-section {
-	display: table;
-	width: 100%;
-	overflow: hidden;
-	background-color: #000;
-	background-color: rgba(0, 0, 0, 1);
-	border-style: solid none none none;
-	border-width: 3px;
-	border-color: rgba(0, 0, 0, 1);
-}
-.share {
-	display: flex;
-	justify-content: center;
 
-	user-select: none;
-	.container {
-		margin: 0 auto;
-		text-align: center;
-	}
-}
-
-// .share-wrap {
-// 	max-width: 1100px;
-// 	text-align: center;
-// 	margin: 25px auto;
-// }
 .final {
 	// margin: 4.5em 0;
 	display: flex;

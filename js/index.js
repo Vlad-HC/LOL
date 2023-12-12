@@ -145,6 +145,16 @@ let obj = [
 			},
 		],
 	},
+	{
+		name: "final",
+		matchups: [
+			{
+				teams: ["", ""],
+				score: [0, 0],
+				date: "12-12-2019 12:00",
+			},
+		],
+	},
 ];
 // Change null to a string with the team's name
 // like
