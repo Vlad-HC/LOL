@@ -8,7 +8,7 @@ html {
 	width: 100%;
 	height: 100%;
 }
-
+  
 body {
 	font-family: "Istok Web", sans-serif;
 	margin: 0;
@@ -17,7 +17,6 @@ body {
 	flex-direction: column;
 	flex: 1;
 }
-
 @import "_bracket.scss";
 @import "_scrollbar.scss";
 
