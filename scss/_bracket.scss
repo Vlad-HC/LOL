@@ -32,7 +32,7 @@
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	width: calc(42% - (42% / 4));
+	width: 42%;
 	-webkit-flex-direction: row;
 	-moz-flex-direction: row;
 	flex-direction: row;
@@ -95,6 +95,7 @@
 	-webkit-transition: all 0.2s;
 	transition: all 0.2s;
 }
+
 .score {
 	font-size: 11px;
 	text-transform: uppercase;
@@ -128,7 +129,6 @@
 	justify-content: flex-end;
 	align-items: center;
 }
-.round-three,
 .round-two,
 .round-four {
 	.matchup {
@@ -136,6 +136,23 @@
 		height: 60px;
 		padding: 10px 0;
 	}
+}
+.round-three {
+	.matchup-container-round-three {
+		.matchup {
+			margin: 0;
+			height: 90%;
+			padding: 10px 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 130px;
+		}
+	}
+}
+.round.round-four.left,
+.round.round-four.right {
+	display: none;
 }
 #cross-symbol {
 	display: none;
