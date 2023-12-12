@@ -131,13 +131,8 @@ let obj = [
 		],
 	},
 	{
-		name: "round-four",
+		name: "final",
 		matchups: [
-			{
-				teams: ["", ""],
-				score: [0, 0],
-				date: "12-12-2019 12:00",
-			},
 			{
 				teams: ["", ""],
 				score: [0, 0],
