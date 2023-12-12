@@ -32,7 +32,7 @@
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	width: calc(42% - (42% / 4));
+	width: 42%;
 	-webkit-flex-direction: row;
 	-moz-flex-direction: row;
 	flex-direction: row;
@@ -95,6 +95,10 @@
 	-webkit-transition: all 0.2s;
 	transition: all 0.2s;
 }
+.matchup.threeTeams {
+	display: flex;
+	flex-direction: column;
+}
 .score {
 	font-size: 11px;
 	text-transform: uppercase;
@@ -128,7 +132,6 @@
 	justify-content: flex-end;
 	align-items: center;
 }
-.round-three,
 .round-two,
 .round-four {
 	.matchup {
@@ -136,6 +139,18 @@
 		height: 60px;
 		padding: 10px 0;
 	}
+}
+.round-three {
+	.matchup {
+		margin: 0;
+		height: 130px;
+		gap: 10px;
+		padding: 10px 0;
+	}
+}
+.round.round-four.left,
+.round.round-four.right {
+	display: none;
 }
 #cross-symbol {
 	display: none;

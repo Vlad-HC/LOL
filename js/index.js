@@ -110,23 +110,13 @@ let obj = [
 		name: "round-three",
 		matchups: [
 			{
-				teams: ["", ""],
-				score: [0, 0],
+				teams: ["", "", ""],
+				score: [0, 0, 0],
 				date: "12-12-2019 12:00",
 			},
 			{
-				teams: ["", ""],
-				score: [0, 0],
-				date: "12-12-2019 12:00",
-			},
-			{
-				teams: ["", ""],
-				score: [0, 0],
-				date: "12-12-2019 12:00",
-			},
-			{
-				teams: ["", ""],
-				score: [0, 0],
+				teams: ["", "", ""],
+				score: [0, 0, 0],
 				date: "12-12-2019 12:00",
 			},
 		],
