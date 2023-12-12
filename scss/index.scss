@@ -18,8 +18,8 @@ body {
 	flex: 1;
 }
 
-@import "bracket.scss";
-@import "scrollbar.scss";
+@import "_bracket.scss";
+@import "_scrollbar.scss";
 
 .bg-image {
 	position: fixed;
@@ -74,9 +74,9 @@ body {
 		font-family: "Holtwood One SC", serif;
 		text-transform: uppercase;
 		letter-spacing: 1px;
-		font-size: 3em;
+		font-size: 50px;
 		margin-bottom: -30px;
-		font-size: 1.2em;
+		
 	}
 }
 .hero-wrap {
