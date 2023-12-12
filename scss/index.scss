@@ -289,7 +289,8 @@ $share-pulse-scale: 1.15;
 
 .share-section {
 	display: flex;
-	// justify-content: space-between;
+
+	justify-content: center;
 
 	width: 100%;
 	background-color: #000;
@@ -317,7 +318,7 @@ $share-pulse-scale: 1.15;
 	}
 }
 .share {
-	width: 33%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 
