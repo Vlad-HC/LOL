@@ -1,8 +1,8 @@
 ILT bracket front-end
 
-Inspired by https://codepen.io/jbeason/pen/Wbaedb mention on website https://blog.codepen.io/2018/02/16/need-make-tournament-bracket/ autor: Joe Beason
-favicon.svg is free for commercial use
-ribbon.svg is on licence Apache 2.0
+Inspired by https://codepen.io/jbeason/pen/Wbaedb mention on website https://blog.codepen.io/2018/02/16/need-make-tournament-bracket/ autor: Joe Beason.
+favicon.svg is free for commercial use.
+ribbon.svg is on licence Apache 2.0.
 
 # Launching
 
