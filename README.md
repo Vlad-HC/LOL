@@ -1,5 +1,7 @@
 ILT bracket front-end
 
+Inspired by https://codepen.io/jbeason/pen/Wbaedb
+
 # Launching
 
 This project uses SCSS and you'll need to compile it.
