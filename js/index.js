@@ -2,7 +2,7 @@
 // You will need to fill in the teams and the score of the match into the respective fields
 // You should also add status: true if you are adding a new matchup so it's displayed as active
 // There is also an optional date parameter in case you would want to show it
-// Inspired by https://codepen.io/jbeason/pen/Wbaedb
+// Inspired by https://codepen.io/jbeason/pen/Wbaedb mention on website https://blog.codepen.io/2018/02/16/need-make-tournament-bracket/ autor: Joe Beason
 let obj = [
 	{
 		name: "round-one",
