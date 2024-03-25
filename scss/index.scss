@@ -4,6 +4,8 @@
 	padding: 0px;
 }
 
+$round-title-color: #21c51e;
+
 body,
 html {
 	width: 100%;
@@ -42,6 +44,11 @@ body {
 	width: calc(100% + 5px * 2);
 	height: calc(100% + 5px * 2);
 }
+
+.half-bright {
+	filter: brightness(50%);
+}
+
 .header-wrap {
 	margin: 1em 0px;
 
@@ -69,10 +76,33 @@ body {
 		font-size: 5.4em;
 		text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 		text-transform: uppercase;
+		text-align: center;
+		line-height: 1.1em;
 		letter-spacing: -1px;
 	}
+
+	.glow {
+		font-size: 80px;
+		color: #fff;
+		text-align: center;
+		-webkit-animation: glow 1s ease-in-out infinite alternate;
+		-moz-animation: glow 1s ease-in-out infinite alternate;
+		animation: glow 1s ease-in-out infinite alternate;
+	}
+
+	@keyframes glow {
+		from {
+			$glow-k1-color: #137300;
+			text-shadow: 0 0 12px $glow-k1-color;
+		}
+		to {
+			$glow-k2-color: #00be03fc;
+			text-shadow: 0 0 16px $glow-k2-color;
+		}
+	}
+
 	.intro {
-		color: #00a6ff;
+		color: #50d100fd;
 		// text-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
 		text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 
@@ -80,7 +110,7 @@ body {
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		font-size: 50px;
-		margin-bottom: -30px;
+		// margin-bottom: -30px;
 	}
 	.line {
 		color: white;
@@ -244,7 +274,7 @@ $share-pulse-scale: 1.15;
 	}
 	.hero {
 		.headline {
-			font-size: 2.5em;
+			font-size: 2em;
 			margin: 15px 0;
 		}
 		.intro {
