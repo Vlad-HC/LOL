@@ -1,83 +1,59 @@
 // There are 3 rounds defined, each of which has multiple matchups of 2 teams
 // You will need to fill in the teams and the score of the match into the respective fields
 // You should also add status: true if you are adding a new matchup so it's displayed as active
-// There is also an optional date parameter in case you would want to show it
+// There is also an optional date parameter in case you want to show it
 // Inspired by https://codepen.io/jbeason/pen/Wbaedb mention on website https://blog.codepen.io/2018/02/16/need-make-tournament-bracket/ autor: Joe Beason
 let obj = [
 	{
 		name: "round-one",
 		matchups: [
 			{
-				teams: ["Drzewce Iverna", "Team Wiaska"],
+				teams: ["", ""],
 				score: [0, 0],
-				date: "12-12-2019 12:00",
-				status: true,
 			},
 			{
-				teams: ["Wielbiciele klaudi", "Tichotato"],
+				teams: ["", ""],
 				score: [0, 0],
-				date: "12-12-2019 12:00",
-				status: false,
 			},
 			{
-				teams: ["Smalec", "Fanklub pana zapalki"],
+				teams: ["", ""],
 				score: [0, 0],
-				date: "12-12-2019 12:00",
-				status: true,
 			},
 			{
-				teams: ["Anki Jax'a", "Igor P"],
+				teams: ["", ""],
 				score: [0, 0],
-				date: "12-12-2019 12:00",
-				status: true,
 			},
 			{
-				teams: ["Malwiaki", "Kiszoniaki wersow"],
+				teams: ["", ""],
 				score: [0, 0],
-				date: "12-12-2019 12:00",
-				status: true,
 			},
 			{
-				teams: ["Stopy Marcysi", "Mamon PDW"],
+				teams: ["", ""],
 				score: [0, 0],
-				date: "12-12-2019 12:00",
-				status: true,
 			},
 			{
-				teams: ["Zakolaki", "Budo Power"],
+				teams: ["", ""],
 				score: [0, 0],
-				date: "12-12-2019 12:00",
-				status: true,
 			},
 			{
-				teams: ["Mokre maćki", "Ukrainian power"],
+				teams: ["", ""],
 				score: [0, 0],
-				date: "12-12-2019 12:00",
-				status: true,
 			},
 			{
-				teams: ["teamfortness3", "Zaza Enjoyers"],
+				teams: ["", ""],
 				score: [0, 0],
-				date: "12-12-2019 12:00",
-				status: true,
 			},
 			{
-				teams: ["JBCS TEAM", "Pole Kombii"],
+				teams: ["", ""],
 				score: [0, 0],
-				date: "12-12-2019 12:00",
-				status: true,
 			},
 			{
-				teams: ["Czaby", "kulaski"],
+				teams: ["", ""],
 				score: [0, 0],
-				date: "12-12-2019 12:00",
-				status: true,
 			},
 			{
-				teams: ["Dziady z budo", "Freewin"],
+				teams: ["", ""],
 				score: [0, 0],
-				date: "12-12-2019 12:00",
-				status: true,
 			},
 		],
 	},
@@ -85,34 +61,28 @@ let obj = [
 		name: "round-two",
 		matchups: [
 			{
-				teams: ["T1", "T3"],
+				teams: ["", ""],
 				score: [0, 0],
-				date: "12-12-2019 12:00",
 			},
 			{
 				teams: ["", ""],
 				score: [0, 0],
-				date: "12-12-2019 12:00",
 			},
 			{
 				teams: ["", ""],
 				score: [0, 0],
-				date: "12-12-2019 12:00",
 			},
 			{
 				teams: ["", ""],
 				score: [0, 0],
-				date: "12-12-2019 12:00",
 			},
 			{
 				teams: ["", ""],
 				score: [0, 0],
-				date: "12-12-2019 12:00",
 			},
 			{
 				teams: ["", ""],
 				score: [0, 0],
-				date: "12-12-2019 12:00",
 			},
 		],
 	},
@@ -122,12 +92,10 @@ let obj = [
 			{
 				teams: ["", "", ""],
 				score: [0, 0, 0],
-				date: "12-12-2019 12:00",
 			},
 			{
 				teams: ["", "", ""],
 				score: [0, 0, 0],
-				date: "12-12-2019 12:00",
 			},
 		],
 	},
@@ -137,7 +105,6 @@ let obj = [
 			{
 				teams: ["", ""],
 				score: [0, 0],
-				date: "12-12-2019 12:00",
 			},
 		],
 	},
