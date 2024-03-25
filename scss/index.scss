@@ -18,6 +18,11 @@ body {
 	flex-direction: column;
 	flex: 1;
 }
+.madimi-one-regular {
+	font-family: "Madimi One", sans-serif;
+	font-style: normal;
+}
+
 @import "_bracket.scss";
 @import "_scrollbar.scss";
 
@@ -59,7 +64,7 @@ body {
 	.headline {
 		color: white;
 
-		font-family: "Holtwood One SC", serif;
+		font-family: "Madimi One", sans-serif;
 		font-weight: normal;
 		font-size: 5.4em;
 		text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
@@ -76,6 +81,15 @@ body {
 		letter-spacing: 1px;
 		font-size: 50px;
 		margin-bottom: -30px;
+	}
+	.line {
+		color: white;
+		font-family: "Madimi One", sans-serif;
+		font-weight: normal;
+		font-size: 5em;
+		text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+		text-transform: uppercase;
+		letter-spacing: -1px;
 	}
 }
 .hero-wrap {
