@@ -36,6 +36,13 @@
 	-moz-flex-direction: row;
 	flex-direction: row;
 }
+
+.sector {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	gap: 15px;
+}
 .champion {
 	display: block;
 	-webkit-flex-direction: row;
@@ -302,9 +309,12 @@
 		border-bottom: 1px solid #b6b6b6;
 		padding-bottom: 20px;
 	}
-}
-@media screen and (max-width: 475px) {
-	.round-details {
-		margin-bottom: 1.5em;
+	.sector {
+		flex-direction: column;
 	}
 }
+// @media screen and (max-width: 475px) {
+// 	.round-details {
+// 		margin-bottom: 1.5em;
+// 	}
+// }

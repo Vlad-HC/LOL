@@ -19,7 +19,7 @@ let sectors = [
 				team2: "O",
 			},
 		],
-		second_mathchup: {
+		second_matchup: {
 			team1: "",
 			team2: "",
 		},
@@ -36,7 +36,7 @@ let sectors = [
 				team2: "O",
 			},
 		],
-		second_mathchup: {
+		second_matchup: {
 			team1: "K",
 			team2: "O",
 		},
@@ -76,7 +76,7 @@ addEventListener("load", (ev) => {
 		for (let matchup of sector.first_matchups) {
 			// matchup
 		}
-		sector.second_mathchup;
+		sector.second_matchup;
 	}
 
 	// Adding matchups
