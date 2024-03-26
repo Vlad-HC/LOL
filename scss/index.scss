@@ -221,7 +221,7 @@ $share-pulse-scale: 1.15;
 	body {
 		background-position: center;
 	}
-	.container {
+	.round-container {
 		margin: 0 1%;
 	}
 	.center-box {
@@ -368,8 +368,31 @@ $share-pulse-scale: 1.15;
 	justify-content: center;
 
 	user-select: none;
-	.container {
+	.round-container {
 		margin: 0 auto;
 		text-align: center;
 	}
+}
+.round-three {
+	// color: #21c51e;
+	font-family: "Roboto Condensed", sans-serif;
+	.fa {
+		color: gold;
+		font-size: 50px;
+	}
+}
+.finals {
+	width: 95%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.team-winners {
+		width: calc(100% / 4);
+	}
+}
+
+.hidden {
+	visibility: hidden;
+	display: none;
 }
