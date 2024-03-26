@@ -20,26 +20,48 @@ html, body{
     border-radius: 15px;
     background-color: pink;
     overflow: hidden;
-
+    margin: 20px;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 200%;
+        height: 50%;
+        background:linear-gradient(rgb(184, 31, 153),rgb(22, 169, 210)) ;
+        animation: rotate 3s linear infinite;
+        border-radius: 200px;  
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        background:pink;
+        inset: 1px;
+        border-radius: 16px;
+    }   
+    
 }
-.out::before{
-    content: '';
-    position: absolute;
-    width: 110%;
-    height: 50%;
-    background:linear-gradient(rgb(184, 31, 153),rgb(22, 169, 210)) ;
-    animation: rotate 3s linear infinite;
-    border-radius: 200px;
+
+.lose{
+    position: relative;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+    overflow: hidden;
+    margin: 20px;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background:linear-gradient(#ff0000,#690b04) ;
+        background-size: 400%;
+        animation: impulse 2s linear infinite;
+        
+    }
 }
 
-.out::after{
-    content: '';
-    position: absolute;
-    background: pink;
-    inset: 4px;
-    border-radius: 16px;
-
-}
 @keyframes rotate{
     from{
         transform: rotate(0deg);
@@ -48,15 +70,15 @@ html, body{
         transform: rotate(360deg);
     }
 }
+@keyframes impulse{
+    0%{
+        background-position-x:0 ;
+        background-position-y: 0;
+        
+    }
+    100%{
+        background-position-x: 1000;
+        background-position-y: 1000;
+    }
+}
 
-
-
-
-
-
-// .in{
-//     width: 300px;
-//     height: 100px;
-//     background-color: rgba(0, 0, 0, 1);
-//     border-radius: 15px;
-// }
