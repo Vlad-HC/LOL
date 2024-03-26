@@ -113,10 +113,11 @@
 		width: 200%;
 		left: -50%;
 		top: 20%;
-		height: 50%;
-		background:linear-gradient(rgb(230, 255, 1),rgb(64, 255, 0)) ;
+		height: 25%;
+		background:linear-gradient(rgb(255, 208, 1),rgb(230, 255, 1),rgb(64, 255, 0),rgb(230, 255, 1),rgb(230, 255, 1)) ;
 		animation: rotate 3s linear infinite;
 		z-index: -2;
+		filter: blur(5px);
 	}
 	&::after{
 		content: '';
