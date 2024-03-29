@@ -1,14 +1,12 @@
 ILT bracket front-end
 
-# Copyright notices
+# Sources
 
-Favicon is free for commercial use - from https://icon-icons.com/icon/League-of-Legends-macOS-BigSur/190030
+Favicon - https://icon-icons.com/icon/League-of-Legends-macOS-BigSur/190030
 
-ribbon.svg is on Apache 2.0 licence - from https://fontawesomeicons.com/ionic/icons/ribbon?utm_content=cmp-
+ribbon.svg - https://fontawesomeicons.com/ionic/icons/ribbon?utm_content=cmp- - Apache 2.0
 
-newbg.webp - from https://mein-mmo.de/lol-warwicks-skills-vorgestellt/
-
-Other files were modified without mention by authors of the project
+newbg.webp - https://mein-mmo.de/lol-warwicks-skills-vorgestellt/
 
 # Launching
 
