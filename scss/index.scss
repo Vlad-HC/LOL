@@ -226,15 +226,7 @@ $share-pulse-scale: 1.15;
 	.round-container {
 		margin: 0 1%;
 	}
-	.center-box {
-		width: 14%;
-	}
-	.split {
-		width: calc(43% - (43% / 4));
-	}
-	.split-one .vote-box {
-		margin-left: 138px;
-	}
+
 	.hero {
 		.intro {
 			font-size: 28px;
@@ -261,14 +253,10 @@ $share-pulse-scale: 1.15;
 }
 @media screen and (max-width: 980px) {
 	.year {
-		// background-color: transparent;
-		// box-shadow: 0 0 20px 10px black;
-		// text-shadow: 1px 1px 1px black;
 		span {
 			letter-spacing: 10px;
 			margin-right: -10px;
 		}
-		// width: 80%;
 		font-size: 24px;
 	}
 	body {
@@ -306,16 +294,7 @@ $share-pulse-scale: 1.15;
 	body {
 		background-position: center;
 	}
-	.split {
-		display: flex;
-		width: 95%;
-		margin: 25px 2.5%;
-	}
-	.current {
-		-webkit-flex-grow: 1;
-		-moz-flex-grow: 1;
-		flex-grow: 1;
-	}
+
 	.hero h1 {
 		font-size: 2em;
 		letter-spacing: 0;
@@ -349,23 +328,23 @@ $share-pulse-scale: 1.15;
 	border-width: 3px;
 	border-color: rgba(0, 0, 0, 1);
 
-	.credits {
-		width: 33%;
-		color: darkcyan;
+	// .credits {
+	// 	width: 33%;
+	// 	color: darkcyan;
 
-		cursor: pointer;
+	// 	cursor: pointer;
 
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	.copyright {
-		width: 33%;
-		color: #0f0f0f;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
+	// 	display: flex;
+	// 	align-items: center;
+	// 	justify-content: center;
+	// }
+	// .copyright {
+	// 	width: 33%;
+	// 	color: #0f0f0f;
+	// 	display: flex;
+	// 	align-items: center;
+	// 	justify-content: center;
+	// }
 }
 .share {
 	width: 100%;
@@ -386,7 +365,7 @@ $share-pulse-scale: 1.15;
 		font-size: 50px;
 	}
 }
-.finals {
+.champion-container {
 	width: 95%;
 	display: flex;
 	justify-content: center;
