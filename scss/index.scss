@@ -219,6 +219,93 @@ $share-pulse-scale: 1.15;
 	color: white;
 }
 
+.share-section {
+	display: flex;
+
+	justify-content: center;
+
+	width: 100%;
+	background-color: #000;
+	background-color: rgba(0, 0, 0, 1);
+	border-style: solid none none none;
+	border-width: 3px;
+	border-color: rgba(0, 0, 0, 1);
+
+	// .credits {
+	// 	width: 33%;
+	// 	color: darkcyan;
+
+	// 	cursor: pointer;
+
+	// 	display: flex;
+	// 	align-items: center;
+	// 	justify-content: center;
+	// }
+	// .copyright {
+	// 	width: 33%;
+	// 	color: #0f0f0f;
+	// 	display: flex;
+	// 	align-items: center;
+	// 	justify-content: center;
+	// }
+}
+.share {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	user-select: none;
+	.round-container {
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+.round-three {
+	max-width: 55%;
+	font-family: "Roboto Condensed", sans-serif;
+	.fa {
+		color: gold;
+		font-size: 50px;
+	}
+}
+.champion-container {
+	width: 95%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.team-winners {
+		width: calc(100% / 4);
+	}
+}
+
+.hidden {
+	visibility: hidden;
+	display: none;
+}
+
+#champion-container {
+	#ribbon {
+		margin: -20px;
+	}
+	.round-details {
+		margin-bottom: -15px;
+	}
+}
+.finals-details {
+	> span {
+		color: white;
+		font-size: large;
+		text-align: center;
+		width: 100%;
+	}
+	display: flex;
+	flex-direction: row;
+	gap: 80px;
+	// justify-content: space-around;
+	width: 100%;
+}
+
 @media screen and (min-width: 981px) and (max-width: 1099px) {
 	body {
 		background-position: center;
@@ -279,7 +366,7 @@ $share-pulse-scale: 1.15;
 	}
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 500px) {
 	.hero p.year i {
 		display: none;
 	}
@@ -288,6 +375,21 @@ $share-pulse-scale: 1.15;
 	}
 	.matchup-container-round-two .semis-section .matchup {
 		width: 100%;
+	}
+	.round-three {
+		width: 100%;
+		max-width: 95%;
+		.matchup {
+			width: 100%;
+		}
+	}
+	.champion-container .team-winners {
+		width: 50%;
+	}
+
+	.matchup-container-round-three,
+	.finals-details {
+		gap: 15px;
 	}
 }
 @media screen and (max-width: 400px) {
@@ -314,90 +416,4 @@ $share-pulse-scale: 1.15;
 		margin: 5px 0 10px;
 		font-size: 18px;
 	}
-}
-
-.share-section {
-	display: flex;
-
-	justify-content: center;
-
-	width: 100%;
-	background-color: #000;
-	background-color: rgba(0, 0, 0, 1);
-	border-style: solid none none none;
-	border-width: 3px;
-	border-color: rgba(0, 0, 0, 1);
-
-	// .credits {
-	// 	width: 33%;
-	// 	color: darkcyan;
-
-	// 	cursor: pointer;
-
-	// 	display: flex;
-	// 	align-items: center;
-	// 	justify-content: center;
-	// }
-	// .copyright {
-	// 	width: 33%;
-	// 	color: #0f0f0f;
-	// 	display: flex;
-	// 	align-items: center;
-	// 	justify-content: center;
-	// }
-}
-.share {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-
-	user-select: none;
-	.round-container {
-		margin: 0 auto;
-		text-align: center;
-	}
-}
-.round-three {
-	// color: #21c51e;
-	font-family: "Roboto Condensed", sans-serif;
-	.fa {
-		color: gold;
-		font-size: 50px;
-	}
-}
-.champion-container {
-	width: 95%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	.team-winners {
-		width: calc(100% / 4);
-	}
-}
-
-.hidden {
-	visibility: hidden;
-	display: none;
-}
-
-#champion-container {
-	#ribbon {
-		margin: -20px;
-	}	
-	.round-details {
-		margin-bottom: -15px;
-	}
-}
-.matchup-details{
-	>span{
-
-		color: white;
-		font-size: large;
-		text-align:center
-	}
-	display: flex;
-	flex-direction: column;
-	gap:5px;
-	width:25%;
 }

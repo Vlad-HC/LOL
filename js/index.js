@@ -11,7 +11,7 @@ let sectors = [
 					"Team 1": 0,
 					"Team 2": 2,
 				},
-				winner: 2, // 1 = Team 1, 2 = Team 2 and so on
+				// winner: 2, // 1 = Team 1, 2 = Team 2 and so on. ADD ONLY WHEN THERE IS A WINNER
 				inactive: true, // Set to true if you haven't yet decided on the matchup so it stays greyed out
 				ongoing: false, // Set to true if it's currently played
 			},
@@ -20,7 +20,6 @@ let sectors = [
 					"Team 3": 2,
 					"Team 4": 1,
 				},
-				winner: 1,
 				inactive: true,
 				ongoing: false,
 			},
@@ -30,7 +29,6 @@ let sectors = [
 				"Team 2": 0,
 				"Team 3": 2,
 			},
-			winner: 2,
 			inactive: true,
 			ongoing: false,
 		},
@@ -43,7 +41,7 @@ let sectors = [
 					"Team 1": 0,
 					"Team 2": 2,
 				},
-				winner: 1,
+
 				inactive: true,
 				ongoing: false,
 			},
@@ -52,7 +50,7 @@ let sectors = [
 					"Team 1": 0,
 					"Team 2": 2,
 				},
-				winner: 1,
+
 				inactive: true,
 				ongoing: false,
 			},
@@ -62,7 +60,7 @@ let sectors = [
 				"Team 1": 0,
 				"Team 2": 2,
 			},
-			winner: 1,
+
 			inactive: true,
 			ongoing: false,
 		},
@@ -75,9 +73,8 @@ let finals = {
 		"Team 1": 0,
 		"Team 2": 1,
 	},
-	winner: 2,
 	inactive: false,
-	ongoing: false,
+	ongoing: true,
 };
 
 // Walka o trzecie miejsce
@@ -86,14 +83,13 @@ let third_place = {
 		"Team 1": 0,
 		"Team 2": 1,
 	},
-	winner: 2,
 	inactive: false,
-	ongoing: false,
+	ongoing: true,
 };
 
 // Change null to a string with the team's name like:
-// let champion = "ZSB-E";
-let champion = null;
+let champions = ["Złoto", "Srebro", "Brąz"];
+// let champion = null;
 
 // Alien technology, do not change
 
@@ -102,8 +98,13 @@ function addMatchup(elem, matchup) {
 		elem.classList.add("inactive");
 	} else if (matchup.ongoing) elem.classList.add("ongoing");
 
+	let i = 1;
 	for (const [teamName, score] of Object.entries(matchup.members)) {
-		elem.innerHTML += `<li class="team"><span>${teamName}</span><span class="score">${score}</span></li>`;
+		let outcomeClass = "";
+		if (matchup.winner !== undefined)
+			outcomeClass = matchup.winner == i ? "winner" : "loser";
+		elem.innerHTML += `<li class="team ${outcomeClass}"><span>${teamName}</span><span class="score">${score}</span></li>`;
+		i++;
 	}
 }
 
@@ -133,14 +134,22 @@ addEventListener("load", (ev) => {
 	);
 	addMatchup(
 		document.querySelectorAll(".matchup-container-round-three .matchup")[1],
-		finals
+		third_place
 	);
-	if (champion !== null) {
-		document.querySelector("#champion-container").classList.remove("hidden")
 
+	if (champions !== null) {
+		document
+			.querySelector("#champion-container")
+			.classList.remove("hidden");
 
-		let champs = document.getElementById("champions");
-		champs.classList.add("active");
-		champs.textContent = champion;
+		let colors = ["gold", "silver", "bronze"];
+		let champs = document.querySelectorAll(".team-winners");
+
+		for (let i = 0; i < champions.length; i++) {
+			champs[i].classList.add("active");
+
+			champs[i].textContent = champions[i];
+			champs[i].classList.add(colors[i]);
+		}
 	}
 });
