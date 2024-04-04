@@ -73,7 +73,7 @@ let finals = {
 		"Team 1": 0,
 		"Team 2": 1,
 	},
-	inactive: false,
+	inactive: true,
 	ongoing: true,
 };
 
@@ -83,13 +83,13 @@ let third_place = {
 		"Team 1": 0,
 		"Team 2": 1,
 	},
-	inactive: false,
+	inactive: true,
 	ongoing: true,
 };
 
-// Change null to a string with the team's name like:
-let champions = ["Złoto", "Srebro", "Brąz"];
-// let champion = null;
+// Change null to a string with the teams' names like:
+// let champions = ["Złoto", "Srebro", "Brąz"];
+let champion = null;
 
 // Alien technology, do not change
 
