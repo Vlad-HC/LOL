@@ -58,7 +58,7 @@
 
 .matchup {
 	position: relative;
-
+	color: black;
 	margin: 0;
 	padding-left: 3px;
 	padding-right: 3px;
@@ -160,9 +160,13 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		.matchup {
+		flex-direction: row;
+		.matchup-details {
+			
 			width: calc(100% / 4);
-			height: 87px;
+			.matchup {
+				height: 87px;
+			}
 		}
 	}
 }

@@ -384,8 +384,20 @@ $share-pulse-scale: 1.15;
 #champion-container {
 	#ribbon {
 		margin: -20px;
-	}
+	}	
 	.round-details {
 		margin-bottom: -15px;
 	}
+}
+.matchup-details{
+	>span{
+
+		color: white;
+		font-size: large;
+		text-align:center
+	}
+	display: flex;
+	flex-direction: column;
+	gap:5px;
+	width:25%;
 }

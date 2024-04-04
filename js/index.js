@@ -69,20 +69,33 @@ let sectors = [
 	},
 ];
 
+// Finał
 let finals = {
 	members: {
 		"Team 1": 0,
 		"Team 2": 1,
 	},
 	winner: 2,
-	inactive: true,
+	inactive: false,
 	ongoing: false,
 };
 
-// Change null to a string with the team's name
-// like
-let champion = "ZSB-E";
-// let champion = null;
+// Walka o trzecie miejsce
+let third_place = {
+	members: {
+		"Team 1": 0,
+		"Team 2": 1,
+	},
+	winner: 2,
+	inactive: false,
+	ongoing: false,
+};
+
+// Change null to a string with the team's name like:
+// let champion = "ZSB-E";
+let champion = null;
+
+// Alien technology, do not change
 
 function addMatchup(elem, matchup) {
 	if (matchup.inactive) {
@@ -115,7 +128,11 @@ addEventListener("load", (ev) => {
 		addMatchup(semisMatchupElem, matchup);
 	}
 	addMatchup(
-		document.querySelector(".matchup-container-round-three .matchup"),
+		document.querySelectorAll(".matchup-container-round-three .matchup")[0],
+		finals
+	);
+	addMatchup(
+		document.querySelectorAll(".matchup-container-round-three .matchup")[1],
 		finals
 	);
 	if (champion !== null) {
