@@ -67,45 +67,12 @@ let sectors = [
 			ongoing: false,
 		},
 	},
-	// Sector C
-	{
-		first_matchups: [
-			{
-				members: {
-					"Team 1": 0,
-					"Team 2": 2,
-				},
-				winner: 1,
-				inactive: true,
-				ongoing: false,
-			},
-			{
-				members: {
-					"Team 1": 0,
-					"Team 2": 2,
-				},
-				winner: 1,
-				inactive: true,
-				ongoing: false,
-			},
-		],
-		second_matchup: {
-			members: {
-				"Team 1": 0,
-				"Team 2": 2,
-			},
-			winner: 1,
-			inactive: true,
-			ongoing: false,
-		},
-	},
 ];
 
 let finals = {
 	members: {
 		"Team 1": 0,
 		"Team 2": 1,
-		"Team 3": 2,
 	},
 	winner: 2,
 	inactive: true,
@@ -114,8 +81,8 @@ let finals = {
 
 // Change null to a string with the team's name
 // like
-// let champion = "ZSB-E";
-let champion = null;
+let champion = "ZSB-E";
+// let champion = null;
 
 function addMatchup(elem, matchup) {
 	if (matchup.inactive) {
@@ -151,27 +118,12 @@ addEventListener("load", (ev) => {
 		document.querySelector(".matchup-container-round-three .matchup"),
 		finals
 	);
-	// Adding matchups
-	// for (const round of obj) {
-	// 	let rounds = document.querySelectorAll(`.${round.name} .matchup`);
+	if (champion !== null) {
+		document.querySelector("#champion-container").classList.remove("hidden")
 
-	// 	for (let i = 0; i < round.matchups.length; i++) {
-	// 		const elem = rounds[i];
-	// 		const matchup = round.matchups[i];
-	// 		for (let j = 0; j < matchup.teams.length; j++) {
-	// 			if (matchup.status !== undefined || matchup.status) {
-	// 				elem.innerHTML += `<li class="team">${matchup.teams[j]}<span class="score">${matchup.score[j]}</span></li>`;
-	// 				elem.classList.add("active");
-	// 			} else {
-	// 				elem.innerHTML += `<li class="team">&nbsp;<span class="score"></span></li>`;
-	// 			}
-	// 		}
-	// 	}
-	// }
 
-	// if (champion !== null) {
-	// 	let champs = document.getElementById("champions");
-	// 	champs.classList.add("active");
-	// 	champs.textContent = champion;
-	// }
+		let champs = document.getElementById("champions");
+		champs.classList.add("active");
+		champs.textContent = champion;
+	}
 });
