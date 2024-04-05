@@ -19,3 +19,4 @@ Use Visual Studio Code with the `Live Sass Compiler` extension. Press `Watch Sas
 The bracket is configured as a JS object in `/js/index.js`. See full explanation in that file.
 
 Formatter - Prettier
+ПРИВЕТ ПОЖАЛУЙСТА ДАЙ СВОИ КОНТАКТЫ ИЛИ НАПИШИ МНЕ В ТЕЛЕГРАМ @GREEVILSGREED
